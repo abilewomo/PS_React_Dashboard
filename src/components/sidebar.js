@@ -8,10 +8,10 @@ export default function Sidebar(){
         {name:"Settings", url:"./views/settings"}];
     
     const linksJSX = links.map(link =>{
-        return (<p><a href={link.url}>{link.name}</a></p>)
+        return (<p ><a href={link.url}>{link.name}</a></p>)
     });
     return (
-        <div className="nav">
+        <div className="sidebar">
             {linksJSX}
         </div>
     )

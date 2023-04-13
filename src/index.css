@@ -5,9 +5,66 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to right, #736a89 , #403e56);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.container{
+  display: grid;
+  height: 80vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  grid-template-rows: 1fr 1fr;
+  background-color: rgba(45, 51, 65, 0.6);
+  width: 90vh;
+  padding: 20px;
+  margin: auto;
+  position: relative;
+  top: 50px;
+}
+.sidebar{
+  padding: 20px;
+  grid-column: 1/1;
+  grid-row: 1/3;
+  background-color: rgba(45, 51, 65);
+  margin: 10px;
+}
+.sidebar p a{
+  display: block;
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.review{
+  background-color: rgba(45, 51, 65);
+  margin: 10px;
+  grid-column: 2/2;
+  grid-row: 1/2;
+  padding: 10px;
+}
+.sentiment{
+  display: block;
+  float: left;
+  background-color: rgba(45, 51, 65);
+  margin: 10px;
+  grid-column: 4/4;
+  grid-row: 1/2;
+  padding: 10px;
+}
+.ratings{
+  background-color: rgba(45, 51, 65);
+  margin: 10px;
+  grid-column:3/3;
+  grid-row: 1/2;
+  padding: 10px;
+}
+.visitors{
+  background-color: rgba(45, 51, 65);
+  margin: 10px;
+  grid-column: 2/5;
+  grid-row: 2/2;
+  padding: 10px;
 }
